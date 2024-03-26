@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transparent Edges Box</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  .container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  .line {
+    position: absolute;
+    width: calc(100% - 4px); /* Adjust based on the thickness of the line */
+    height: calc(100% - 4px); /* Adjust based on the thickness of the line */
+    border: 2px solid transparent;
+  }
+  .line.top {
+    top: 0;
+    border-bottom-color: black;
+  }
+  .line.bottom {
+    bottom: 0;
+    border-top-color: black;
+  }
+  .line.left {
+    left: 0;
+    border-right-color: black;
+  }
+  .line.right {
+    right: 0;
+    border-left-color: black;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="line top"></div>
+  <div class="line bottom"></div>
+  <div class="line left"></div>
+  <div class="line right"></div>
+</div>
+
+</body>
+</html>

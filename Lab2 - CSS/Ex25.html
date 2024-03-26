@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Ex 25 - Lab 2</title>
+    <style>
+        @keyframes bounce {
+            0%   {top:0px;}
+            50%  {top:80vh;}
+            100% {top:0px;}
+        }
+
+        div {
+            text-align: center;
+            height: 95vh;
+            background-color: antiquewhite;
+        }
+
+        svg {
+            position: relative;
+            animation-play-state: paused;
+            animation-name: bounce;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        svg:hover{
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <svg height="100" width="100">
+        <circle r="45" cx="50" cy="50" fill="red" />
+      </svg>
+    </div>
+</body>
+</html>
