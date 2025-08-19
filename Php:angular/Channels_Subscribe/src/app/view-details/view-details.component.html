@@ -1,0 +1,63 @@
+<label for="category" >Category: </label> 
+        <select required id="cate" [(ngModel)]="category" (ngModelChange)="getRecords()" >
+            <option value="book">book</option>
+            <option value="article">article</option>
+            <option value="webResource">webResource</option>
+            <option value="dvd">dvd</option>
+            <option value="manual">manual</option>  
+        </select>
+    <button (click)="deleteCategory()">Delete</button>
+
+    <h1>Records: </h1>
+    <ul>
+        <li *ngFor="let recs of recordList | paginate: {itemsPerPage: elementsPerPage, currentPage: currentPage, totalItems: totalEntries}">
+            <p><strong>Author: </strong>{{recs.author}}</p>
+            <p><strong>Title: </strong> {{recs.title}}</p>
+            <p><strong>Year: </strong>{{recs.year}}</p>
+            <hr>
+        </li>
+    </ul>
+    <div style="text-align: center;">
+        <pagination-controls (pageChange)="updatePage($event)"></pagination-controls>
+    </div>
+
+    <h1>Author most awards: </h1>
+    <button (click)="getAuthor()">Get Author</button> <br>
+    <p>{{this.author}}</p>
+
+
+
+<!-- <div>
+    <h3>Add new document: </h3>
+    <label>Name: </label>
+    <input [(ngModel)]="docName"> <br>
+    <label>Content: </label>
+    <input [(ngModel)]="docContent"><br>
+    <button (click)="AddNewDocument()">Add</button>
+    <p>{{error}}</p>
+</div>
+
+<h1>Movie _ Docs: </h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let movie of movieList">
+        <tr>
+            <td>{{movie.id}}</td>
+            <td>{{movie.title}}</td>
+            <td>{{movie.duration}}</td>
+        </tr>
+    </tbody>
+    <tbody *ngFor="let doc of docList">
+        <tr>
+            <td>{{doc.id}}</td>
+            <td>{{doc.name}}</td>
+            <td>{{doc.content}}</td>
+        </tr>
+    </tbody>
+</table> -->

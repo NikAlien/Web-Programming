@@ -1,0 +1,59 @@
+<div>
+    <h2>My Channels: </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Subscribers</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let channel of userChannels">
+            <tr>
+                <td>{{channel.id}}</td>
+                <td>{{channel.name}}</td>
+                <td>{{channel.description}}</td>
+                <td>{{channel.subscribers}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <h2>Subscribed Channels: </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let channel of subscribedChannels">
+            <tr>
+                <td>{{channel.name}}</td>
+                <td>{{channel.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <h2>View Channels: </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Subscibe</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let channel of allChannels">
+            <tr>
+                <td>{{channel.id}}</td>
+                <td>{{channel.name}}</td>
+                <td>{{channel.description}}</td>
+                <td><button (click)="subscribeChannel(channel.id)">Subscribe</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

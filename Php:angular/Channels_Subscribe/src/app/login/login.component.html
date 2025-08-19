@@ -1,0 +1,13 @@
+<div>
+    <label>Username: </label>
+    <input [(ngModel)]="name"> <br>
+    <label for="type">Type: </label> 
+        <select required id="type" [(ngModel)]="type">
+            <option value="document">document</option>
+            <option value="movie">movie</option>
+        </select> <br>
+    <label>Name or id: </label>
+    <input [(ngModel)]="identifier"><br>
+    <button (click)="logIn()">Log In</button>
+    <p>{{error}}</p>
+</div>
