@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <title>Thumbnail Gallery</title>
+    <style>
+        
+        #thumbnail-gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .thumbnail {
+            margin: 10px;
+        }
+
+        .thumbnail img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        #big-image {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div id="thumbnail-gallery">
+        </div>
+
+        <div id="big-image">
+        </div>
+        
+        <script src="imageEvents.js"></script>
+
+    </body>
+</html>
+

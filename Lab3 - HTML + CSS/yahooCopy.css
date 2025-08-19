@@ -1,0 +1,335 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    background-color: white;
+    height: fit-content;
+    display: block;
+}
+
+.mainDiv {
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 6%;
+    margin-right: 20px;
+}
+
+.searchBar {
+    background-color: rgb(240, 243, 245);
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "YahooSans VF", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-width: 0px;
+    padding-left: 24px;
+    padding-right: 145px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 40px;
+    width: 25em;
+    text-align: start;
+}
+
+.inputContainer {
+    position: relative;
+    margin-right: 64px;
+    width: fit-content;
+    padding-top: 10px;
+}
+
+.microButton {
+    position: absolute;
+    top: 1.5em;
+    left: 36.5em;
+    border: 0px;
+}
+
+.searchButton {
+    background-color: rgb(96, 1, 210);
+    border-radius: 100px;
+    width: 5em;
+    height: 40px;
+    border-width: 0px;
+    position: absolute;
+    top: 0.7em;
+    left: 39em;
+    border: 0px;
+}
+
+.navDiv {
+    display: flex;
+    justify-content: flex-end;
+    text-align: start;
+    margin-right: 64px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-top: 6%;
+    padding-left: 0px;
+}
+
+li {
+    float: left;
+}
+
+.news {
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(35, 42, 49);
+    padding: 4px;
+}
+
+.text {
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(91, 99, 106);
+    padding: 4px;
+}
+
+.moreButton {
+    background-color: white;
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-width: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(91, 99, 106);
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: start;
+}
+
+.singInButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(35, 42, 49);
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 16px;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    border-color: rgb(224, 228, 233);
+}
+
+.mainBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    column-gap: 32px;
+    padding-top: 20px;
+}
+
+.topAd {
+    margin-bottom: 40px;
+    margin-top: 5%;
+    display: block;
+    width: 45em;
+}
+
+.topAdTitle {
+    color: black;
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0px;
+}
+
+.adPosition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 248, 250);
+    color: rgb(110,119, 128);
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    min-height: 90px;
+}
+
+main{
+    display: block;
+    position: relative;
+    text-align: start;
+}
+
+.mainNews {
+    display: block;
+    text-align: start;
+}
+
+.mainHeaderNews {
+    display: flex;
+    text-align: start;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 8px;
+}
+
+.imgDivPolitician {
+    background-clip: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.rightContent {
+    width: 45%;
+    overflow: hidden;
+    background-image: url(images/politician.png);
+    background-position-x: 100%;
+    background-position-y: 50%;
+    background-size: cover;
+}
+
+.rightContent p {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.40);
+    padding-left: 25px;
+    margin: 0px;
+    font-size: 25px;
+    color: rgb(35, 42, 49);
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    height: 100%;
+    line-height: 100px;
+    backdrop-filter: blur(10px);
+}
+
+.imgPolitician {
+    object-fit: cover;
+    overflow-x: clip;
+    overflow-y: clip;
+    vertical-align: bottom;
+    width: 45em;
+}
+
+.smallNews {
+    padding-bottom: 10px;
+    display: block;
+}
+
+.smallNewsList {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    padding: 0px;
+}
+
+.smallNewsLi {
+    display: list-item;
+    margin-right: 12px;
+}
+
+.smallNewsdiv {
+    overflow: hidden;
+}
+
+.smallNewsImg {
+    object-fit: cover;
+    overflow-x: clip;
+    overflow-y: clip;
+    border-radius: 4px;
+    vertical-align: bottom;
+    width: 10em;
+}
+
+.smallNewsH3 {
+    color: rgb(29, 34, 40);
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    max-height: 52px;
+    max-width: 10em;
+    overflow: hidden;
+    text-align: left;
+    text-rendering: optimizelegibility;
+    -webkit-box-orient: vertical;
+}
+
+aside {
+    position: relative;
+}
+
+.asideDiv {
+    width: 300px;
+}
+
+.trendingNowDiv {
+    border-radius: 8px;
+    display: block;
+    text-align: start;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 1px 0px, rgba(0, 0, 0, 0.1) 0px 4px 8px 0px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.hd {
+    color:rgb(35, 42, 49);
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    margin-left: 16px;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+#box {
+    fill: rgb(96, 1, 210);
+    stroke: none;
+}
+
+.aTrending{
+    display: block;
+    margin-top: 8px;
+}
+
+.spanNrTrending {
+    padding-right: 6px;
+    color: rgb(96, 1, 210);
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.spanNameTrending {
+    padding-right: 6px;
+    color: rgb(29, 34, 40);
+    font-family: "YahooSans VF", "Yahoo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.bottomAd {
+    margin-bottom: 20px;
+    display: block;
+}
